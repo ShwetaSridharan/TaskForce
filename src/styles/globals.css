@@ -1,0 +1,98 @@
+/* Import Tailwind CSS */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Comfortaa:wght@400;600;700&display=swap');
+
+
+
+@theme {
+  --font-heading: "Comfortaa", sans-serif;
+  --font-body: "Atkinson Hyperlegible", sans-serif;
+  --font-code: "Comfortaa", sans-serif;
+}
+
+/* Optional: Use @theme for customization in v4 (skip for now) */
+/* 
+@theme {
+  --color-primary: #4ade80;
+  --color-secondary: #3b82f6;
+}
+*/
+
+/* Base Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-body);
+}
+
+code {
+  font-family: var(--font-code);
+}
+
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, sans-serif;
+  color: #1f2937; /* Tailwind gray-800 */
+  background-color: #f9fafb; /* Tailwind gray-50 */
+  line-height: 1.5;
+}
+
+/* Smooth transitions (optional) */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+div[role=grid] {
+background-color: red;;
+}
+
+/* Remove default focus outline and add custom one (optional) */
+*:focus {
+  outline: none /* Tailwind blue-500 */
+  
+}
+
+/* Custom selection (optional) */
+/*  */
+
+/* Optional: Custom scrollbar (Webkit-based browsers) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* border-radius: 4px; */
+}
+
+/* src/styles/calendar.css */
+.react-calendar {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+}
+
+.react-calendar__tile {
+  background: none;
+  color: white;
+}
+
+.react-calendar__tile--active {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+}
